@@ -1,8 +1,45 @@
-import React from "react";
+// import React from "react";
 import { Component } from "react";
+// import DatePicker from "react-datepicker" ;
+// import "react-datepicker/dist/react-datepicker.css";
+import React, { useState } from "react";  
+import DatePicker from "react-datepicker";  
+  
+import "react-datepicker/dist/react-datepicker.css"; 
+
+// import { DatePicker } from 'rsuite';
+
+// or
+// import DatePicker from 'rsuite/DatePicker';
+
+
 
 export class artistsignup extends Component {
+    // constructor (props) {  
+    //     super(props)  
+    //     this.state = {  
+    //       startDate: new Date()  
+    //     };  
+    //     this.handleChange = this.handleChange.bind(this);  
+    //     this.onFormSubmit = this.onFormSubmit.bind(this);  
+    //   }  
+      
+    //   handleChange(date) {  
+    //     this.setState({  
+    //       startDate: date  
+    //     })  
+    //   }  
+      
+    //   onFormSubmit(e) {  
+    //     e.preventDefault();  
+    //     console.log(this.state.startDate)  
+    //   }  
     render() {
+        // const [selectedDate , setSelectedDate] = useState(null)
+        // this.state = { selectedDate: null }
+
+        // const instance = <DatePicker placeholder="Select Date" style={{ width: 200 }} />;
+        // const [startDate, setStartDate] = useState(new Date());
         return (
             <form action="#" className="signup-form">
                 <div className="form-group mb-3">
@@ -15,16 +52,17 @@ export class artistsignup extends Component {
                 </div>
                 <div className="form-group mb-3">
                     <label className="label" for="career">Career starting point</label>
-                    <input type="date" className="form-control" value="today" min="2018-01-01" max="2018-12-31"/>
+
+                    <input className="form-control" type="date" id="artistdate" name="artistdate"/>
+                   
                 </div>
-                {/* <div className=" wrapper-left form-group mb-3"> */}
-                    {/* <input type="radio" name="select" id="option-band" uncheck/>  */}
-                    {/* <label for="option-band" class="option option-band">
+                <div className=" wrapper-left form-group mb-3"> 
+                    <label for="option-band" class="option option-band">
                         <span className="label option-band">Is this a band ?</span>
                         <input className="m-2 option-band" type="radio" name="select" id="option-band" />
-                    </label> */}
+                    </label>
                     
-                {/* </div> */}
+                </div>
                 <div className="form-group mb-3">
                     <label classNameName="label" for="email">Email Address</label>
                     <input type="text" className="form-control" placeholder="john@gmail.com"/>

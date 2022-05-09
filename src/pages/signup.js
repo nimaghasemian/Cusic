@@ -33,26 +33,29 @@ export class signup extends Component {
                             <h2 className="heading-section">CUSIC</h2>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row  justify-content-center">
                         <div class="col-md-7 col-lg-5">
                             <div class="login-wrap p-4 p-md-5">
                                 <h3 class="text-center mb-4">Create Your Account</h3>
                                 <hr/>
-                                <div className="wrapper">
-                                    <input type="radio" name="select" id="option-1" Checked onChange={this.handleuserlogin} />
-                                    <input type="radio" name="select" id="option-2" onChange={this.handleartistlogin} /> 
-                                    <label for="option-1" class="option option-1">
-                                        <span className="m-2">User</span>
-                                    </label>
-                                    <label for="option-2" class="option option-2">
-                                        <span className="m-2">Artist</span>
-                                    </label> 
-                                    
-                                </div>
+                                
+                                    <div className="wrapper float:left">
+                                        <input type="radio" className="topbtn" name="select" id="option-1" onChange={this.handleuserlogin} />
+                                        <label for="option-1" class="option option-1 background-color: #01d28e">
+                                            <span className="m-2"><img src={require('../img/2.png')} width="28" />User</span>
+                                        </label>
+                                        <input type="radio" className="topbtn" name="select" id="option-2" onChange={this.handleartistlogin} /> 
+                                        <label for="option-2" class="option option-2">
+                                            <span className=" m-2"> <img src={require('../img/1.png')} width="28" />Artist</span>
+                                        </label> 
+                                        
+                                    </div>
+                                
+                                
                                 <section className="fdco-section">
                                 <div className="container">
                                     <div className="row justify-content-center">
-                                        <div className="col-md-7 col-lg-5">
+                                        <div className="col-md-7 col-lg-5 inputfield">
                                         <br/><br/>
                                             {/* <div className="login-wrap p-4 p-md-5"></div> */}
                                             { isUserSignUpActive ?(
