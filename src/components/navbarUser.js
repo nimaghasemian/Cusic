@@ -19,7 +19,7 @@ const NavbarUser = ({ onRouteChange }) => {
                     </div>
                     <div >
                     <div className='profilepic' >
-                        <img src={require("../img/test.jpg")} alt="Avatar" />
+                        <img src={require("../img/userPP.jpg")} alt="Avatar" />
                     </div>
                         
                     {/* <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> */}
@@ -32,6 +32,7 @@ const NavbarUser = ({ onRouteChange }) => {
                         <li><a href="/">Library</a></li>
                         <li><a href="/">Followers</a></li>
                         <li><a href="/">Followeing</a></li>
+                        <li><a href="/">profile</a></li>
                         <li><a href="/">news</a></li>
                         </div>
                     </ul>

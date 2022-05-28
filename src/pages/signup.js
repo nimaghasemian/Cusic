@@ -2,12 +2,13 @@ import React from "react";
 import { Component } from "react";
 import UserSignup from "../components/usersignup";
 import ArtistSignUp from "../components/artistsignup";
-
-
+import Login from "./login";
+import { Link } from "react-router-dom";
 export class signup extends Component {
 
     state = {
         isUserSignUpActive : true,
+        gotologin : false,
     }
 
     handleuserlogin = () =>{
@@ -20,6 +21,15 @@ export class signup extends Component {
     handleartistlogin = () =>{
     
         this.setState({isUserSignUpActive : false});
+    }
+
+    handlelogin = () =>{
+
+        // this.setState({gotologin : true});
+        return(
+            <Login/>
+        )
+
     }
 
     render() {
@@ -51,7 +61,7 @@ export class signup extends Component {
                                         
                                     </div>
                                 
-                                
+                                <br/>
                                 <section className="fdco-section">
                                 <div className="container">
                                     <div className="row justify-content-center">
@@ -63,7 +73,10 @@ export class signup extends Component {
                                             ):(
                                                 <ArtistSignUp/>
                                             )}
-                                            <p>I'm already a member! <a data-toggle="tab" href="./login.js">login</a></p>
+                                            <p>I'm already a member! <Link to="/login">login</Link></p>
+                                            {/* { gotologin ?(<Login/>):(<></>)} */}
+                                                
+                                            {/* <Link to="/login" className="btn btn-primary">Sign up</Link> */}
                                             </div>
                                     </div>
                                 </div>
