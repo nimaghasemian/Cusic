@@ -39,12 +39,13 @@ const NavbarArtist = ({ onRouteChange }) => {
                     <a class="menu" href="#home">USERNAME</a>
                         <div class="menu">
                         {/* <Router> */}
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">Announcement </a></li>
-                        <li><a href="/">Collaboration</a></li>
-                        <li><a href="/">Private</a></li>                        
-                        <li><a >profile</a></li>
-                        <li><a href="/">Setting</a></li>
+                        <li><Link to="/inprocess">Home</Link></li>
+                        <li><Link to="/inprocess">Announcement </Link></li>
+                        <li><Link to="/inprocess">Collaboration</Link></li>
+                        <li><Link to="/inprocess">Private</Link></li>                        
+                        <li><Link to="/inprocess">profile</Link></li>
+                        <li><Link to="/artistprofile">artistprofile</Link></li>
+                        <li><Link to="/inprocess">Setting</Link></li>
                             {/* <Routes>
                                 <Route path="/profile" element={<ArtistProfile/>} />
                             </Routes>

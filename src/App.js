@@ -8,7 +8,7 @@ import Userprofile from './pages/userProfile';
 import Login from './pages/login';
 import { Outlet, Link } from "react-router-dom";
 import react from 'react';
-
+import Inprocess from './pages/inproces';
 import { Component } from "react";
 
 
@@ -40,12 +40,6 @@ function App() {
             <li>
               <Link to="/artisthome">artist home</Link>
             </li>
-            <li>
-              <Link to="/userprofile">artist home</Link>
-            </li>
-            <li>
-              <Link to="/artistprofile">artist home</Link>
-            </li>
           </ul>
           <Routes>
             <Route path="/login" element={<Login/>} />
@@ -54,6 +48,7 @@ function App() {
             <Route path="/artisthome" element={<ArtistHomePage/>} />
             <Route path="/artistprofile" element={<ArtistProfile/>} />
             <Route path="/userprofile" element={<Userprofile/>} />
+            <Route path="/inprocess" element={<Inprocess/>} />
             
             
           </Routes>

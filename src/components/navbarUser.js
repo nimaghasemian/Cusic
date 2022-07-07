@@ -1,6 +1,13 @@
 import React from 'react';
 import { Component } from 'react';
- 
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link,
+    useRoutes,
+  } from "react-router-dom";
+  
 const NavbarUser = ({ onRouteChange }) => {
 
 
@@ -32,7 +39,7 @@ const NavbarUser = ({ onRouteChange }) => {
                         <li><a href="/">Library</a></li>
                         <li><a href="/">Followers</a></li>
                         <li><a href="/">Followeing</a></li>
-                        <li><a href="/">profile</a></li>
+                        <li><Link to="/userprofile">profile</Link></li>
                         <li><a href="/">news</a></li>
                         </div>
                     </ul>
