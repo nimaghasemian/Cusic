@@ -10,8 +10,9 @@ import { Outlet, Link } from "react-router-dom";
 import react from 'react';
 import Inprocess from './pages/inproces';
 import { Component } from "react";
-
-
+import Uploader from './pages/uploader';
+import Landing from './pages/landing';
+import UserHomeBody from './components/userHomeBody';
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,9 +24,12 @@ import {
 function App() {
     return (
       <div>
+      <UserHomeBody/>
+      {/* <Landing/> */}
+      {/* <Uploader/> */}
       {/* <ArtistProfile/> */}
       {/* <Userprofile/> */}
-      <Router>
+      {/* <Router>
         <div>
           <ul>
             <li>
@@ -49,12 +53,13 @@ function App() {
             <Route path="/artistprofile" element={<ArtistProfile/>} />
             <Route path="/userprofile" element={<Userprofile/>} />
             <Route path="/inprocess" element={<Inprocess/>} />
+            <Route path="" element={<Landing/>} />
             
             
           </Routes>
           
         </div>
-      </Router>
+      </Router> */}
       </div>
     );
 }
